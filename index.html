@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Share My Location</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="container">
+
+    <section class="card">
+
+        <div class="pin">📍</div>
+
+        <h1>Share My Location</h1>
+
+        <p class="intro">
+            This page can request your current location.
+        </p>
+
+        <div class="privacy">
+
+            <strong>Your permission is required</strong>
+
+            <p>
+                Your location will not be requested until
+                you press the button below.
+            </p>
+
+            <p>
+                Your browser will then ask whether you want
+                to allow location access.
+            </p>
+
+        </div>
+
+        <button id="shareButton">
+            Share My Location
+        </button>
+
+        <div id="status" class="status hidden"></div>
+
+        <div id="result" class="result hidden">
+
+            <h2>Location Shared</h2>
+
+            <div>
+                <span>Latitude</span>
+                <strong id="latitude"></strong>
+            </div>
+
+            <div>
+                <span>Longitude</span>
+                <strong id="longitude"></strong>
+            </div>
+
+            <div>
+                <span>Accuracy</span>
+                <strong id="accuracy"></strong>
+            </div>
+
+            <div>
+                <span>Time</span>
+                <strong id="time"></strong>
+            </div>
+
+            <a
+                id="mapsLink"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open in Google Maps
+            </a>
+
+        </div>
+
+        <p class="note">
+            🔒 Location access is controlled by your browser.
+        </p>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
